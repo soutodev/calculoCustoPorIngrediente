@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+    border-bottom: 1px solid black;
+}
+
+.container-main h1 {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.container-main input {
+    margin: 0.4rem 0;
+    padding: 0.3rem 0.3rem;
+    width: 400px;
+}
+
+.container-main button {
+    margin-top: 2rem;
+    padding: 0.4rem 0;
+    margin-bottom: 2rem;
+    width: 400px;
+}
+
+/* Div Resultado */
+.container-result-active {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
