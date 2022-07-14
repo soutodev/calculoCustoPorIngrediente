@@ -11,16 +11,16 @@
     <div class="container">
         <div class="container-main">
             <h1>Custo por Ingredinte</h1>
-            <input id="nomeProduto" type="text" placeholder="Insira o nome do Ingredinte">
-            <input id="precoIngrediente" type="number" placeholder="Insira o preço do Ingredinte">
-            <input id="quantProdutoTotal" type="number" placeholder="Insira o total em g/ml do produto">
-            <input id="quantReceita" type="number" placeholder="Insira o uso em g/ml usado na receita">
-            <button id="btnCalcular">Calcular</button>
+            <input id="nomeProduto" type="text" placeholder="Insira o nome do Ingredinte" required>
+            <input id="precoIngrediente" type="number" placeholder="Insira o preço do Ingredinte" required>
+            <input id="quantProdutoTotal" type="number" placeholder="Insira o total em g/ml do produto" required>
+            <input id="quantReceita" type="number" placeholder="Insira o uso em g/ml usado na receita" required>
+            <button id="btnCalcular" type="submit" onclick="calcularCusto()">CALCULAR</button>
         </div>
     
         <div class="container-result-active">
-            <h2>Resultado</h2>
-            <h3 id="result-text">Calculando...</h3>
+            <h2 id="result-title"></h2>
+            <h3 id="result-text"></h3>
         </div>
     </div>
 

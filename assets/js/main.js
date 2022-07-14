@@ -1,13 +1,24 @@
-let precoIngrediente = 6;
-let quantProdutoTotal = 1000;
-let quantReceita = 360;
-let custoIngredinte = 0;
+  
 
- const calculoCusto = (precoIngrediente, quantProdutoTotal, quantReceita) => {
-    return ( (precoIngrediente / quantProdutoTotal) * quantReceita );
- }
 
- custoIngredinte = (calculoCusto(precoIngrediente, quantProdutoTotal, quantReceita));
+function calcularCusto() {
 
- //arredondando para duas casas decimais 
- console.log("R$ " + (custoIngredinte).toFixed(2) + " para cada " +  quantReceita + "g");
+       var custoIngrediente = 0;
+
+       var precoIngrediente = document.getElementById("precoIngrediente").value;
+       var quantProdutoTotal = document.getElementById("quantProdutoTotal").value;
+       var quantReceita = document.getElementById("quantReceita").value;
+       var nomeProduto = document.getElementById("nomeProduto").value;
+
+       console.log(precoIngrediente, quantProdutoTotal, quantReceita, nomeProduto);
+
+       custoIngrediente = ( (precoIngrediente / quantProdutoTotal) * quantReceita );
+      
+       template = `${nomeProduto} custa R$${(custoIngrediente).toFixed(2)} a cada ${quantReceita}g/ml`;
+      
+       document.getElementById("result-title").innerText = "Resultado: ";
+       document.getElementById("result-text").innerText = `${template}`;
+      
+
+}
+
