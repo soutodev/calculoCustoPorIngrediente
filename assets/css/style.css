@@ -10,15 +10,20 @@ body {
     font-family:'Roboto', sans-serif;
 }
 
+.container {
+    margin: 3rem;
+    padding: 2rem;
+}
+
 .container-main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2.5rem;
 }
 
 .container-main h1 {
     margin-bottom: 2rem;
+    font-size: 1.7rem;
     text-transform: uppercase;
 }
 
